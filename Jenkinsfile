@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'sudo apt-get install -y maven'
+                sh 'apk add maven'
                 sh 'mvn clean install'
                 sh 'mvn versions:use-latest-releases'
             }
