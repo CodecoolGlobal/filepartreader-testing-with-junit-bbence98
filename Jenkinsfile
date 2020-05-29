@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'sudo apt-get install -y maven'
+                sh 'mvn clean install'
                 sh 'mvn versions:use-latest-releases'
             }
         }
