@@ -10,7 +10,6 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'mvn versions:use-latest-releases'
-                sh 'mvn compile'
             }
         }
         stage('Test') { 
