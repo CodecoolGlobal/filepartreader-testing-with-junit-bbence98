@@ -1,14 +1,14 @@
 pipeline {
     agent {
         docker {
-            image 'maven:3-alpine' 
-            args '-v /root/.m2:/root/.m2' 
+            image 'ubuntu:18.04'
         }
     }
     
     stages {
         stage('Build') {
             steps {
+                sh 'sudo apt-get install -y maven'
                 sh 'mvn clean install'
                 sh 'mvn versions:use-latest-releases'
             }
