@@ -38,8 +38,8 @@
         <version>${version.maven.compiler.plugin}</version>
         <inherited>true</inherited>
         <configuration>
-          <source>1.11.0</source>
-          <target>1.11.0</target>
+          <source>1.14.0</source>
+          <target>1.14.0</target>
           <compilerArgument>-Xlint:all</compilerArgument>
           <showWarnings>true</showWarnings>
           <showDeprecation>true</showDeprecation>
